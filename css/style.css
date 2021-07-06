@@ -1,0 +1,120 @@
+body{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center cener;
+  color: #fff;
+
+  font-size: 24px;
+}
+
+.clock{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock-time{
+  display: inline-block;
+  text-align: center;
+  font-size: 64px;
+  background: rgba(0,0,0, 0.5);
+  box-shadow: 0 0 30px 10px rgba(0,0,0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+/* GREETINGS */
+
+
+.form{
+  text-align: center;
+
+}
+
+.js-form__input{
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  font-size: 24px;
+  box-shadow: 0 0 20px 5px rgba(0,0,0, 0.5);
+  outline: transparent;
+}
+
+.js-form__input::placeholder{
+  color: rgb(151, 150, 150);
+  text-align: center;
+  box-shadow: 0 0 20px 1px rgba(0,0,0, 0.5);
+}
+
+.js-form__input:focus{
+  box-shadow: 0 0 20px 10px rgba(0,0,0, 0.5);
+}
+
+.form, .hi{
+  display: none;
+}
+
+.hi{
+  text-align: center;
+  margin: 0;
+}
+
+.show{
+  display: block;
+}
+
+
+.js-todoform{
+  text-align: center;
+  margin-top: 20px;
+
+}
+
+.js-todo-input{
+  min-width: 320px;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  font-size: 24px;
+  box-shadow: 0 0 20px 5px rgba(0,0,0, 0.5);
+  outline: transparent;
+}
+
+.js-todo-input::placeholder{
+  box-shadow: 0 0 20px 1px rgba(0,0,0, 0.5);
+  text-align: center;
+}
+
+.js-todo-input:focus{
+  box-shadow: 0 0 20px 10px rgba(0,0,0, 0.5);
+}
+
+/* BG */
+
+
+@keyframes bgAnim {
+  0%{
+    opacity: 0;
+    transform: translateX(-100%);
+    height: 0;
+    top: 50%;
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0%);
+    height: 100%;
+    top: 0;
+  }
+}
+
+.bgImg{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+  animation: bgAnim .5s ease-in;
+}
